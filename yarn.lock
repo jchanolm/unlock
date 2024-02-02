@@ -7191,7 +7191,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@logtail/core@npm:^0.4.17":
+"@logtail/core@npm:^0.4.17, @logtail/core@npm:^0.4.19":
   version: 0.4.19
   resolution: "@logtail/core@npm:0.4.19"
   dependencies:
@@ -7202,7 +7202,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@logtail/node@npm:0.4.17, @logtail/node@npm:^0.4.12":
+"@logtail/node@npm:0.4.19":
+  version: 0.4.19
+  resolution: "@logtail/node@npm:0.4.19"
+  dependencies:
+    "@logtail/core": "npm:^0.4.19"
+    "@logtail/types": "npm:^0.4.19"
+    "@msgpack/msgpack": "npm:^2.5.1"
+    "@types/stack-trace": "npm:^0.0.29"
+    cross-fetch: "npm:^3.0.4"
+    minimatch: "npm:^3.0.4"
+    serialize-error: "npm:^8.1.0"
+    stack-trace: "npm:^0.0.10"
+  checksum: 1f768bd0e74b3d71547679aad4185e8184979d8e1cb58a7c62d08909f7cea9573e50f5367e1f41e30d7772eb5c16030ba6de62e210f39665ad46d5d4eebc2b0c
+  languageName: node
+  linkType: hard
+
+"@logtail/node@npm:^0.4.12":
   version: 0.4.17
   resolution: "@logtail/node@npm:0.4.17"
   dependencies:
@@ -17432,7 +17448,7 @@ __metadata:
   resolution: "@unlock-protocol/locksmith@workspace:locksmith"
   dependencies:
     "@aws-sdk/client-s3": "npm:3.489.0"
-    "@logtail/node": "npm:0.4.17"
+    "@logtail/node": "npm:0.4.19"
     "@logtail/winston": "npm:0.4.12"
     "@nuintun/qrcode": "npm:3.3.5"
     "@openzeppelin/defender-relay-client": "npm:1.54.1"

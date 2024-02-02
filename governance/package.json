@@ -9,7 +9,7 @@
     "@nomiclabs/hardhat-ethers": "2.2.3",
     "@nomiclabs/hardhat-etherscan": "3.1.8",
     "@openzeppelin/hardhat-upgrades": "3.0.2",
-    "@openzeppelin/upgrades-core": "1.32.2",
+    "@openzeppelin/upgrades-core": "1.32.4",
     "@safe-global/api-kit": "2.0.0",
     "@safe-global/protocol-kit": "2.0.0",
     "@tenderly/hardhat-tenderly": "2.1.0",

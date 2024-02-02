@@ -17753,7 +17753,7 @@ __metadata:
     "@walletconnect/client": "npm:1.8.0"
     "@walletconnect/ethereum-provider": "npm:2.9.2"
     "@walletconnect/modal": "npm:2.6.2"
-    "@xstate/react": "npm:3.2.2"
+    "@xstate/react": "npm:4.0.3"
     autoprefixer: "npm:10.4.17"
     axios: "npm:1.6.3"
     blockies-react-svg: "npm:0.0.13"
@@ -17802,7 +17802,7 @@ __metadata:
     vitest-fetch-mock: "npm:0.2.2"
     vitest-localstorage-mock: "npm:0.0.1"
     walletlink: "npm:2.5.0"
-    xstate: "npm:4.38.3"
+    xstate: "npm:5.6.0"
     zod: "npm:3.22.4"
     zod-to-json-schema: "npm:3.21.4"
   languageName: unknown
@@ -19085,22 +19085,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xstate/react@npm:3.2.2":
-  version: 3.2.2
-  resolution: "@xstate/react@npm:3.2.2"
+"@xstate/react@npm:4.0.3":
+  version: 4.0.3
+  resolution: "@xstate/react@npm:4.0.3"
   dependencies:
     use-isomorphic-layout-effect: "npm:^1.1.2"
     use-sync-external-store: "npm:^1.0.0"
   peerDependencies:
-    "@xstate/fsm": ^2.0.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    xstate: ^4.37.2
+    xstate: ^5.5.2
   peerDependenciesMeta:
-    "@xstate/fsm":
-      optional: true
     xstate:
       optional: true
-  checksum: 6368a9ac318402401ef978e799db43479b75151ae645420dee207ad03cc51b079ca26d6e65325458721d8fd398a256dad13989f04500b10fd023adadeba9fe6d
+  checksum: 0ec173f9d1816600da155bad403c61f5f71e23850d61b96525b841372096f5b1fa3b3ebe6745e79442013935ce582ea8708bd1ea36f540e22beffdd571d59acc
   languageName: node
   linkType: hard
 
@@ -56423,10 +56420,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"xstate@npm:4.38.3":
-  version: 4.38.3
-  resolution: "xstate@npm:4.38.3"
-  checksum: 82f30ed1d049d6be6274e54e34f46cad93fe773e4e333753acf363b8010f3685d256f154a91e5c1d615df654e14164dfc630c768af090925442b2c877cb9f11c
+"xstate@npm:5.6.0":
+  version: 5.6.0
+  resolution: "xstate@npm:5.6.0"
+  checksum: cb64f66efd578cfaefe788bc6bd91c8147cee10d06a6612353a54a83c859389f800c3fe0b690ce1f0b98bc19f6870d24ddfddd1b83c284cc22bda0c56a4ae3db
   languageName: node
   linkType: hard
 

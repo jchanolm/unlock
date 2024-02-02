@@ -19,7 +19,7 @@
     "@unlock-protocol/hardhat-plugin": "workspace:^",
     "@unlock-protocol/networks": "workspace:./packages/networks",
     "eslint": "8.54.0",
-    "ethers": "6.9.0",
+    "ethers": "6.10.0",
     "fs-extra": "11.2.0",
     "hardhat": "2.19.5",
     "solhint": "4.0.0"

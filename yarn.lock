@@ -17367,7 +17367,7 @@ __metadata:
     "@unlock-protocol/hardhat-plugin": "workspace:^"
     "@unlock-protocol/networks": "workspace:./packages/networks"
     eslint: "npm:8.54.0"
-    ethers: "npm:6.9.0"
+    ethers: "npm:6.10.0"
     fs-extra: "npm:11.2.0"
     hardhat: "npm:2.19.5"
     solhint: "npm:4.0.0"
@@ -17422,7 +17422,7 @@ __metadata:
     typescript: "npm:5.3.3"
   peerDependencies:
     "@unlock-protocol/contracts": "*"
-    ethers: ^5.7.x
+    ethers: ^5.7.x || ^6.0.0
     hardhat: ^2.12.x
   languageName: unknown
   linkType: soft
@@ -17470,7 +17470,7 @@ __metadata:
     dotenv: "npm:16.1.3"
     eslint: "npm:8.41.0"
     eslint-config-standard: "npm:17.1.0"
-    ethers: "npm:5.7.2"
+    ethers: "npm:6.10.0"
     express: "npm:5.0.0-beta.1"
     express-winston: "npm:4.2.0"
     fuse.js: "npm:6.6.2"
@@ -17605,7 +17605,7 @@ __metadata:
     eslint: "npm:8.46.0"
     eth-gas-reporter: "npm:0.2.27"
     eth-sig-util: "npm:3.0.1"
-    ethers: "npm:5.7.2"
+    ethers: "npm:6.10.0"
     fs-extra: "npm:11.1.1"
     hardhat: "npm:2.18.3"
     hardhat-contract-sizer: "npm:2.10.0"
@@ -17653,7 +17653,7 @@ __metadata:
   resolution: "@unlock-protocol/types@workspace:packages/types"
   dependencies:
     "@unlock-protocol/tsconfig": "workspace:./packages/tsconfig"
-    ethers: "npm:5.7.2"
+    ethers: "npm:6.10.0"
     typescript: "npm:5.0.4"
   languageName: unknown
   linkType: soft
@@ -17685,7 +17685,7 @@ __metadata:
     "@unlock-protocol/unlock-js": "workspace:./packages/unlock-js"
     "@vitejs/plugin-react": "npm:4.2.1"
     autoprefixer: "npm:10.4.17"
-    ethers: "npm:5.7.2"
+    ethers: "npm:6.10.0"
     postcss: "npm:8.4.32"
     prism-react-renderer: "npm:2.3.0"
     react: "npm:18.2.0"
@@ -17763,7 +17763,7 @@ __metadata:
     deep-object-diff: "npm:1.1.9"
     dotenv: "npm:16.3.1"
     eslint: "npm:8.46.0"
-    ethers: "npm:5.7.2"
+    ethers: "npm:6.10.0"
     file-saver: "npm:2.0.5"
     from-exponential: "npm:1.1.1"
     graphql: "npm:16.8.1"
@@ -17813,7 +17813,7 @@ __metadata:
   resolution: "@unlock-protocol/unlock-express@workspace:packages/unlock-express"
   dependencies:
     "@unlock-protocol/eslint-config": "workspace:./packages/eslint-config"
-    ethers: "npm:5.7.2"
+    ethers: "npm:6.10.0"
     passport-custom: "npm:1.1.1"
     prettier: "npm:3.1.0"
   peerDependencies:
@@ -17852,7 +17852,7 @@ __metadata:
     vitest: "npm:0.34.6"
   peerDependencies:
     axios: 1.4.0
-    ethers: ^5.7.x
+    ethers: ^5.7.x || ^6.0.0
   languageName: unknown
   linkType: soft
 
@@ -17884,7 +17884,7 @@ __metadata:
     embla-carousel-react: "npm:7.1.0"
     eslint: "npm:8.54.0"
     eslint-config-next: "npm:14.0.4"
-    ethers: "npm:5.7.2"
+    ethers: "npm:6.10.0"
     feed: "npm:4.2.2"
     gray-matter: "npm:4.0.3"
     next: "npm:14.0.4"
@@ -29026,9 +29026,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ethers@npm:6.9.0":
-  version: 6.9.0
-  resolution: "ethers@npm:6.9.0"
+"ethers@npm:6.10.0, ethers@npm:^6.8.1":
+  version: 6.10.0
+  resolution: "ethers@npm:6.10.0"
   dependencies:
     "@adraffy/ens-normalize": "npm:1.10.0"
     "@noble/curves": "npm:1.2.0"
@@ -29037,7 +29037,7 @@ __metadata:
     aes-js: "npm:4.0.0-beta.5"
     tslib: "npm:2.4.0"
     ws: "npm:8.5.0"
-  checksum: a48f268aa934900d90e34fd6b607db3d774ce58c73d249697f68398afa673b483fda19c6fa91eb91784fdfbaa07eb4c753b245c2123c5d2072f8dc1897cd556d
+  checksum: 04fdd3f76ea93a8b45b2fe4d9c8e2bd0d688823faba672897dd19cc3303c202a166902fe6058004562f13aaecf9f77a9f70ff113f995e94107efef2457b016dd
   languageName: node
   linkType: hard
 
@@ -29070,21 +29070,6 @@ __metadata:
     uuid: "npm:2.0.1"
     xmlhttprequest: "npm:1.8.0"
   checksum: a4cec0254f940a0fb118317d23676faa46eb5540fc0a3b9177b8aef71318f509ed19b8264f102b1a2a32d0256274ecc526fd926bd22a4a4ac25cd8e0e6560f12
-  languageName: node
-  linkType: hard
-
-"ethers@npm:^6.8.1":
-  version: 6.10.0
-  resolution: "ethers@npm:6.10.0"
-  dependencies:
-    "@adraffy/ens-normalize": "npm:1.10.0"
-    "@noble/curves": "npm:1.2.0"
-    "@noble/hashes": "npm:1.3.2"
-    "@types/node": "npm:18.15.13"
-    aes-js: "npm:4.0.0-beta.5"
-    tslib: "npm:2.4.0"
-    ws: "npm:8.5.0"
-  checksum: 04fdd3f76ea93a8b45b2fe4d9c8e2bd0d688823faba672897dd19cc3303c202a166902fe6058004562f13aaecf9f77a9f70ff113f995e94107efef2457b016dd
   languageName: node
   linkType: hard
 
@@ -44117,7 +44102,7 @@ __metadata:
     "@cloudflare/workers-types": "npm:4.20230922.0"
     "@types/node": "npm:20.10.1"
     "@unlock-protocol/networks": "workspace:^"
-    ethers: "npm:5.7.2"
+    ethers: "npm:6.10.0"
     toucan-js: "npm:3.3.1"
     typescript: "npm:5.3.3"
     vitest: "npm:0.34.6"

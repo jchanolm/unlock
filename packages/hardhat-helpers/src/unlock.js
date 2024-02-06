@@ -28,7 +28,7 @@ export const getUnlockAddress = async () => {
 export const getNetwork = async () => {
   const { ethers } = require('hardhat')
   const { chainId } = await ethers.provider.getNetwork()
-  return networks[chainId]
+  return networks[chainId] || { name: 'localhost', id: chainId }
 }
 
 export default {

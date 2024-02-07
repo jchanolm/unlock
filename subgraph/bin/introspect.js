@@ -18,7 +18,7 @@ const introspectionJSONFilePath = path.join(
   'introspection.json'
 )
 
-const network = process.env.INTROSPECT_NETWORK || '5'
+const network = process.env.INTROSPECT_NETWORK || '1'
 const endpoint = networks[network].subgraph.endpointV2
 
 console.log(`Fetching graphql introspection from ${endpoint}`)

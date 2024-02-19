@@ -13,6 +13,7 @@ import {
 } from '@unlock-protocol/ui'
 import AddToCalendarButton from './AddToCalendarButton'
 import { TweetItButton } from './TweetItButton'
+import { CastItButton } from './CastItButton'
 import { CopyUrlButton } from './CopyUrlButton'
 import { getEventDate, getEventEndDate, getEventUrl } from './utils'
 import { useEventOrganizer } from '~/hooks/useEventOrganizer'
@@ -35,6 +36,7 @@ import { SettingEmail } from '~/components/interface/locks/Settings/elements/Set
 import { storage } from '~/config/storage'
 import { FaUsers } from 'react-icons/fa'
 import { TbSettings } from 'react-icons/tb'
+import { config } from '~/config/app'
 
 interface EventDetailsProps {
   event: Event
@@ -155,22 +157,20 @@ export const EventDetails = ({
 
   const coverImage = event.ticket.event_cover_image
 
-  // TODO: OG for event!
-  // const locksmithEventOG = new URL(
-  //   `/v2/og/event/${network}/locks/${lockAddress}`,
-  //   config.locksmithHost
-  // ).toString()
-
   return (
     <div>
       <NextSeo
-        title={event.title}
-        description={`${event.description}. Powered by Unlock Protocol.`}
+        title={event.name}
+        description={`${event.description} 
+Powered by Unlock Protocol`}
         openGraph={{
+          title: event.title,
+          type: 'website',
+          url: eventUrl,
           images: [
             {
               alt: event.title,
-              url: 'locksmithEventOG',
+              url: `${config.unlockApp}/og/event/${event.slug}`,
             },
           ],
         }}
@@ -205,7 +205,7 @@ export const EventDetails = ({
         </div>
 
         <div className="relative">
-          <div className="w-full h-32 overflow-hidden -z-0 bg-slate-200 md:h-80 md:rounded-3xl">
+          <div className="w-full h-32 overflow-hidden -z-0 bg-slate-200 md:h-80 md:rounded-3xl rounded-lg">
             {coverImage && (
               <img
                 className="object-cover w-full h-full"
@@ -227,19 +227,22 @@ export const EventDetails = ({
 
           <div className="absolute flex flex-col w-full gap-6 px-4 md:px-10 -bottom-12">
             <section className="flex justify-between">
-              <div className="flex w-24 h-24 p-1 bg-white md:p-2 md:w-48 md:h-48 rounded-3xl">
+              <div className="flex w-24 h-24 p-1 bg-white md:p-2 md:w-48 md:h-48 md:rounded-3xl rounded-xl">
                 <img
                   alt={event.title}
-                  className="object-cover w-full m-auto aspect-1 rounded-2xl"
+                  className="object-cover w-full m-auto aspect-1 md:rounded-2xl rounded-lg"
                   src={event.image}
                 />
               </div>
-              <ul className="flex items-center gap-2 mt-auto md:gap-2">
+              <ul className="flex items-center gap-0 mt-auto md:gap-2">
                 <li>
                   <AddToCalendarButton event={event} eventUrl={eventUrl} />
                 </li>
                 <li>
                   <TweetItButton event={event} eventUrl={eventUrl} />
+                </li>
+                <li>
+                  <CastItButton event={event} eventUrl={eventUrl} />
                 </li>
                 <li>
                   <CopyUrlButton eventUrl={eventUrl} />
@@ -251,7 +254,9 @@ export const EventDetails = ({
 
         <section className="grid items-start grid-cols-1 md:gap-4 lg:grid-cols-3  lg:px-12 lg:mt-16 mt-8">
           <div className="flex flex-col col-span-3 gap-4 md:col-span-2">
-            <h1 className="text-3xl font-bold md:text-7xl">{event.name}</h1>
+            <h1 className="mt-4 text-3xl font-bold md:text-6xl">
+              {event.name}
+            </h1>
             <section className="mt-4">
               <div className="grid grid-cols-1 gap-6 md:p-6 md:grid-cols-2 rounded-xl">
                 {hasDate && (
@@ -276,7 +281,6 @@ export const EventDetails = ({
                 {hasLocation && <EventLocation event={event} />}
               </div>
               <div className="mt-10">
-                <h2 className="text-xl font-bold">Event Information</h2>
                 {event.description && (
                   <div className="mt-4 markdown">
                     {/* eslint-disable-next-line react/no-children-prop */}

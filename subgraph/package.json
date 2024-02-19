@@ -12,7 +12,6 @@
     "codegen": "graph codegen",
     "copy-manifest": "rm -rf subgraph.yaml && cp ../tests/subgraph.test.yaml subgraph.yaml",
     "copy-networks": "rm -rf networks.json && cp ../docker/development/eth-node/networks.json networks.json",
-    "create-local": "graph create --node http://localhost:8020/ ",
     "deploy-all-studio": "node bin/thegraph deploy-all-studio",
     "deploy-all": "node bin/thegraph deploy-all",
     "deploy-hosted": "graph build && graph deploy --product hosted-service ",
@@ -28,12 +27,11 @@
     "prepare:networks": "node ./bin/networks.js",
     "prepare:test": "yarn copy-manifest && yarn copy-networks",
     "prepare": "yarn prepare:networks && yarn prepare:abis",
-    "remove-local": "graph remove --node http://localhost:8020/ ",
     "show-events": "node -e 'require(\"./bin/abis.js\").showAllEvents()'",
     "test": "graph test -v 0.5.2"
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "0.62.0",
+    "@graphprotocol/graph-cli": "0.68.0",
     "@graphprotocol/graph-ts": "0.31.0",
     "@unlock-protocol/eslint-config": "workspace:./packages/eslint-config",
     "@unlock-protocol/networks": "workspace:^",
